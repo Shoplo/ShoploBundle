@@ -1,0 +1,12 @@
+services:
+    shoplo.security.authentication.provider:
+        class: Shoplo\ShoploBundle\Security\Authentication\Provider\HmacProvider
+        arguments:
+            - ''
+            - '%shoplo_app_secret%'
+        public: false
+
+    shoplo.security.authentication.listener:
+        class: Shoplo\ShoploBundle\Security\Firewall\HmacListener
+        arguments: ['@security.token_storage', '@security.authentication.manager']
+        public: false

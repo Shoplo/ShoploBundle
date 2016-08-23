@@ -1,4 +1,4 @@
 ShoploBundle
 ============
 
-Shoplo bundle for Symfony 2
+Shoplo bundle for Symfony
