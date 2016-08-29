@@ -2,8 +2,10 @@
     "name": "shoplo/shoplo-bundle",
     "type": "symfony-bundle",
     "description": "Symfony ShoploBundle",
-    "keywords": ["Shoplo"],
-    "homepage": "http://www.shoplo.com",
+    "keywords": [
+        "Shoplo"
+    ],
+    "homepage": "https://github.com/Shoplo/ShoploBundle",
     "license": "MIT",
     "authors": [
         {
@@ -16,15 +18,16 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "php": ">=5.3.2",
-        "symfony/framework-bundle": "2.1.*",
-        "symfony/security-bundle": "2.1.*"
+        "php": "^7.0",
+        "symfony/framework-bundle": "~2.3|~3.0",
+        "symfony/security-bundle": "~2.3|~3.0",
+        "doctrine/orm": "^2.5"
     },
     "autoload": {
-        "psr-0": {
-            "Shoplo\\ShoploBundle": ""
+        "psr-4": {
+            "Shoplo\\ShoploBundle\\": ""
         }
-    },
-    "target-dir": "Shoplo/ShoploBundle"
+    }
 }
